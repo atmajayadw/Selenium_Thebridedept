@@ -1,0 +1,20 @@
+Test Login
+
++Positive scenario
+1. User visit Website
+2. User click CTA Member
+3. User input Email
+4. User input Password
+5. User click CTA Login
+6. System validating login creds
+7. Login success and showing copy "Latest articles you might like" as an Assertion
+
+-Negative scenario
+1. User visit Website
+2. User click CTA Member
+3. User input Email
+4. User input Password
+5. User click CTA Login
+6. System validating login creds
+7. Login failed and showing copy "Invalid email or password" as an Assertion
+
