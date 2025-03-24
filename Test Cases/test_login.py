@@ -50,7 +50,6 @@ class logintest(unittest.TestCase):
             print(Fore.RED + 'Fail! - ' + validation_login.text)
             print(Style.RESET_ALL)
         except: 
-
             # Validationg success login creds & Access Profile page
             profile = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '/html/body/div/div/div[2]/div[1]/div/div[3]/div/span/a')))
@@ -68,6 +67,7 @@ class logintest(unittest.TestCase):
     #5.End session / close browser
     def tearDown(self):
         self.driver.close()
+
 #6.Running Test
 if __name__ == "__main__":
     unittest.main()
