@@ -59,6 +59,7 @@ class logintest(unittest.TestCase):
             dashboard = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '/html/body/div/div/div/div[2]/div[2]/div/div[2]/section/div/div[1]/div/div[1]/div')))
             assert "Latest articles you might like" in dashboard.text
+            
             # Print / show Result
             print(Fore.GREEN + 'Sukses Login!')
 
